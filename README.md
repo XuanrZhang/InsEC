@@ -16,6 +16,7 @@ It requires python3.
 Input: A read dataset in .fasta\fastq format and an nucleotide sequence of interests in .fasta format
 
 	- reads.fa(\fq) : store the whole read data needed to be corrected.
+	- ref.fa : store the nucleotide sequence of interests (e.g. a sequence of genes or a sequence of coding region).
 
 Output: A corrected read dataset only related to the given nucleotide sequence and An assembled contig based on corrected data
 
