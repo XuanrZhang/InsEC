@@ -1,11 +1,13 @@
 #!/bin/bash
 
-
+#--- install BWA-MEM ---
+curl -L https://github.com/bwa-mem2/bwa-mem2/releases/download/v2.0pre1/bwa-mem2-2.0pre1_x64-linux.tar.bz2 | tar jxf -
+  
 #--- build index----
-./bwa-mem2 index ref.fa;
+bwa-mem2-2.0pre1_x64-linux/bwa-mem2 index ref.fa 
 
 #--- map by BWA-MEM ---
-./bwa-mem2 mem -T 90 ref.fa reads.fq > gene.sam;
+bwa-mem2-2.0pre1_x64-linux/bwa-mem2 mem -T 90 ref.fa reads.fq > gene.sam;
 
 awk '{if(NR>2 && $6=="100M") print $1" "$2 " "$4 " "$10}' gene.sam |sort -nk3 > extract.sam;
 
