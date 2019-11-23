@@ -42,7 +42,6 @@ print(json.dumps(vars(args), indent=4, separators=(',', ':')))
 
 
 R_file = args.sam_file
-#r = pd.read_csv(R_file, delimiter =' ', names = ['ID','strand','sta_p','map_index','sam_q'],encoding = 'unicode_escape')
 r = pd.read_csv(R_file, delimiter =' ', names = ['ID','strand','sta_p','sam_q'],encoding = 'unicode_escape')
 
 dict_tonu = {'A':1,'C':2,'T':3,'G':4,'N':5}
@@ -142,7 +141,6 @@ for i in range(51,gene_length+51):
                     tmp_count[min_l] = read_number
                     min_l = np.argmin(tmp_count)
             else:
-                #--- deal high coverage part--- 
                 continue
 
 
