@@ -10,7 +10,9 @@ In the correction step, we take advantage of alignment processes and rectify err
 
 	git clone https://github.com/xuanrzhang/InsEC
 	cd InsEC
+	chmod +x bwa-mem2-2.0pre1_x64-linux/bwa*
 	chmod +x run.sh
+	
 	./run.sh [sequence.fa] [reads.fa] [gene_length] [read_length]
 	e.g 
 	./run.sh ref.fa reads.fa 4892 100
