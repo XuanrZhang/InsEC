@@ -18,9 +18,9 @@ It requires python3 or later (within Pandas package).
 	chmod +x bwa-mem2-2.0pre1_x64-linux/bwa*
 	chmod +x run.sh
 	
-	./run.sh [sequence.fa] [reads.fa] [gene_length] [read_length]
+	./run.sh [sequence.fa] [reads.fa]
 	e.g 
-	./run.sh ref.fa reads.fa 4892 100
+	./run.sh ref.fa reads.fa
   
 ## Data format
 Input: A read dataset in .fasta\fastq format and an nucleotide sequence of interests in .fasta format
