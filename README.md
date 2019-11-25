@@ -14,10 +14,9 @@ It requires python 3 or later.
 ## Download & Usage
 
 	git clone https://github.com/xuanrzhang/InsEC
-	cd InsEC
-	chmod +x bwa-mem2-2.0pre1_x64-linux/bwa*
+	cd InsEC	
 	chmod +x run.sh
-	python setup.py install
+	pip install pandas (optional command, if you don't install pandas before)
 	
 	./run.sh [sequence.fa] [reads.fa]
 	e.g 
