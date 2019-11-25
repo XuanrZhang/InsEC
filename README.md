@@ -9,7 +9,7 @@ In the correction step, we take advantage of alignment processes and rectify err
 ## Dependancies
 BWA-MEM tool is used in extraction step. Here is the instruction of BWA-MEM installation (https://github.com/bwa-mem2/bwa-mem2).
 
-It requires python3 or later (within Pandas package).
+It requires python 3 or later.
 
 ## Download & Usage
 
@@ -17,6 +17,7 @@ It requires python3 or later (within Pandas package).
 	cd InsEC
 	chmod +x bwa-mem2-2.0pre1_x64-linux/bwa*
 	chmod +x run.sh
+	python setup.py install
 	
 	./run.sh [sequence.fa] [reads.fa]
 	e.g 
