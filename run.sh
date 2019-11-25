@@ -1,4 +1,6 @@
 #!/bin/bash
+chmod +x bwa-mem2-2.0pre1_x64-linux/bwa*
+
 echo "start read extraction"
 
 fL=$[$(awk '{if(NR>1)print}' ${1}|wc -m)-$(awk '{if(NR>1)print}' ${1}|wc -l)-100]
